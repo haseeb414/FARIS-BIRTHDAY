@@ -18,13 +18,4 @@ function updateCountdown() {
     `${days}d ${hours}h ${minutes}m ${seconds}s`;
 }
 
-// 🎵 Play music on button click
-document.getElementById("playBtn").addEventListener("click", function () {
-  const audio = document.getElementById("birthdayAudio");
-  audio.play().then(() => {
-    console.log("🎶 Music is playing");
-  }).catch(err => {
-    alert("🔇 Please tap again – browser blocked auto play.");
-    console.log(err);
-  });
-});
+
