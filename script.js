@@ -19,3 +19,7 @@ function updateCountdown() {
 
 setInterval(updateCountdown, 1000);
 updateCountdown();
+document.getElementById("playBtn").addEventListener("click", function () {
+    const audio = document.getElementById("birthdayAudio");
+    audio.play();
+});
