@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Happy Birthday, Little Star 🎂</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Nephew 🎂</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="balloons">
-    <div class="balloon red"></div>
     <div class="balloon blue"></div>
-    <div class="balloon green"></div>
+    <div class="balloon sky"></div>
+    <div class="balloon navy"></div>
   </div>
 
   <div class="container">
-    <h1>🎉 Happy Birthday to Our Sweet Nephew! 🍼</h1>
-    <h2>Countdown to July 29 🎂</h2>
-    <div id="timer"></div>
+    <h1>🎉 Happy Birthday, Sweet Nephew 💙</h1>
+    <h2>From Khan Family 🧿</h2>
+    <h3 id="timer">Loading countdown...</h3>
 
     <div class="cake">
       <div class="candles">
@@ -23,21 +24,23 @@
         <div class="flame"></div>
         <div class="flame"></div>
       </div>
-      <div class="layer layer1"></div>
-      <div class="layer layer2"></div>
-      <div class="layer layer3"></div>
+      <div class="layer blue1"></div>
+      <div class="layer blue2"></div>
+      <div class="layer blue3"></div>
     </div>
 
-    <p class="msg">You're our shining little star 🌟 — From Khan Family 💖</p>
+    <div class="baby-pics">
+      <img src="https://i.imgur.com/gX6lqJY.gif" alt="Teddy" />
+      <img src="https://i.imgur.com/dXQoYcV.gif" alt="Gift" />
+      <img src="https://i.imgur.com/GxNjcZI.gif" alt="Milk Bottle" />
+    </div>
+
+    <button id="playBtn">▶️ Play Birthday Song</button>
+    <audio id="birthdayAudio">
+      <source src="https://www.fesliyanstudios.com/play-mp3/387" type="audio/mpeg" />
+    </audio>
   </div>
 
   <script src="script.js"></script>
-<audio id="birthdayAudio" controls style="display:none;">
-  <source src="https://www.fesliyanstudios.com/play-mp3/387" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-<button id="playBtn">▶️ Play Birthday Song</button>
-
 </body>
 </html>
