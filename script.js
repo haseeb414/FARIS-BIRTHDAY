@@ -18,4 +18,6 @@ function updateCountdown() {
     `${days}d ${hours}h ${minutes}m ${seconds}s`;
 }
 
-
+// 🔁 Call the function now + every second
+updateCountdown(); // Initial call
+setInterval(updateCountdown, 1000); // Keep updating every second
