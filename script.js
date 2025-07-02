@@ -18,13 +18,13 @@ function updateCountdown() {
     `${days}d ${hours}h ${minutes}m ${seconds}s`;
 }
 
-setInterval(updateCountdown, 1000);
-updateCountdown();
-
-// 🎵 Play audio
+// 🎵 Play music on button click
 document.getElementById("playBtn").addEventListener("click", function () {
   const audio = document.getElementById("birthdayAudio");
-  audio.play().catch(() => {
-    alert("🔊 Please tap again to allow sound");
+  audio.play().then(() => {
+    console.log("🎶 Music is playing");
+  }).catch(err => {
+    alert("🔇 Please tap again – browser blocked auto play.");
+    console.log(err);
   });
 });
