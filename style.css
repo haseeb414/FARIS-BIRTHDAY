@@ -108,3 +108,18 @@ h2 {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
 }
+#playBtn {
+    padding: 12px 25px;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+#playBtn:hover {
+    transform: scale(1.1);
+}
